@@ -22,7 +22,7 @@ export default function HomePage() {
         </div>
 
         <div className="hero-image">
-          <img src="" alt="image" />
+          <img src="https://www.slazzer.com/static/images/design_templates/recipe_photo_designer/placeholder.png" alt="image of a pizza" />
         </div>
       </section>
     </main>

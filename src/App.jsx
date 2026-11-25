@@ -14,6 +14,7 @@ function App() {
         <Route path="/buildrecipe" element={<Pages.BuildRecipePage />} />
         <Route path="/recipe" element={<Pages.RecommendedRecipePage />} />
         <Route path="/recipe/:id" element={<Pages.RecipePage />} />
+        <Route path="/explore" element={<Pages.ExplorePage />} />
         <Route path="/favourites" element={<Pages.FavouritesPage />} />
         <Route path="*" element={<Pages.NotFoundPage />} />
       </Route>
