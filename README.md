@@ -20,6 +20,7 @@ A full frontend recipe application built with React. Browse recipes, search by t
 | `/buildrecipe` | Build a recipe |
 | `/recipe` | Recommended recipes |
 | `/recipe/:id` | Recipe details |
+| `/explore` | Explore recipes |
 | `/favourites` | Saved favourites |
 | `*` | Not found |
 
@@ -44,13 +45,6 @@ src/
 ├── App.jsx       # Routes
 └── main.jsx      # Entry point (Router + FavouritesProvider)
 ```
-
-## How it works
-
-- **Data:** recipes come from the DummyJSON Recipes API.
-- **Favourites:** a React context stores saved recipes and syncs them to localStorage, so they persist after a refresh.
-- **Routing:** React Router with a shared `Header` layout and nested page routes.
-
 
 ## Future improvements
 
