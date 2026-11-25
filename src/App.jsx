@@ -2,9 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import * as Pages from "./pages";
 import { Header } from "./components";
 import RecipeCard from "./components/RecipeCard";
-import './App.css'
-
-
+import "./App.css";
 
 function App() {
   return (
@@ -14,6 +12,7 @@ function App() {
         <Route path="/buildrecipe" element={<Pages.BuildRecipePage />} />
         <Route path="/recipe" element={<Pages.RecommendedRecipePage />} />
         <Route path="/recipe/:id" element={<Pages.RecipePage />} />
+        <Route path="/explore" element={<Pages.ExplorePage />} />
         <Route path="/favourites" element={<Pages.FavouritesPage />} />
         <Route path="*" element={<Pages.NotFoundPage />} />
       </Route>
