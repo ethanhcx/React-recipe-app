@@ -1,10 +1,14 @@
 import React from "react";
+import FavouriteButton from "../FavouriteButton";
 
 function RecipeCard({ recipe }) {
   return (
     <div className="recipe-card">
       <h1 className="recipe-name">{recipe.name}</h1>
       <img className="recipe-image" src={recipe.image} alt={recipe.name} />
+      <div className="recipe-actions">
+        <FavouriteButton recipe={recipe} />
+      </div>
 
       <div className="recipe-content">
         <div className="recipe-sidebar">

@@ -1,7 +1,9 @@
-import React from 'react'
+import { useFavourites } from '../../context/FavouritesContext'
 
-export default function FavouritesPage() {
+function FavouritesPage() {
   return (
     <div>index</div>
   )
 }
+
+export default FavouritesPage;

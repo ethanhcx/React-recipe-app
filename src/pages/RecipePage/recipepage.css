@@ -148,3 +148,9 @@
 .recipe-info strong {
   color: #254f3c;
 }
+
+.recipe-actions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}

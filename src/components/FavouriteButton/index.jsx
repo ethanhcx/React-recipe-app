@@ -6,11 +6,13 @@ function FavouriteButton({ recipe }) {
     const saved = isFavourite(recipe.id)
 
     return (
-        <button type="button" 
-        className={`favourite-button ${saved ? "favourite-button-active" : ""}`}
-        onClick={() => toggleFavourite(recipe)}
-        aria-pressed={saved}
-        >{saved ? "♥ Saved" : "♡ Save"}</button>
+        <button 
+            type="button" 
+            className={`favourite-button ${saved ? "favourite-button-active" : ""}`}
+            onClick={() => toggleFavourite(recipe)}
+            aria-pressed={saved}
+            >{saved ? "♥ Saved" : "♡ Save"}
+        </button>
     )
 }
 
