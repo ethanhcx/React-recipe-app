@@ -55,3 +55,46 @@
   background-color: #37664e;
 }
 
+.recipe-card {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.recipe-name {
+    margin: 0 0 1rem;
+    font-size: 1.75rem;
+}
+
+.recipe-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.recipe-list {
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.recipe-steps-heading {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.25rem;
+}
+
+.recipe-steps {
+    padding-left: 1.5rem;
+    line-height: 1.6;
+}
+
+.recipe-steps li {
+    margin-bottom: 0.5rem;
+}

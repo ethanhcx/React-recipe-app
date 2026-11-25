@@ -1,7 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import * as Pages from "./pages";
-import Header from "./components/header";
-import "./App.css";
+import { Header } from "./components";
+import RecipeCard from "./components/RecipeCard";
+import './App.css'
+
+
 
 function App() {
   return (
