@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SearchBarExplore from "../../components/SearchBarExplore";
+import RecipeGallery from "../../components/RecipeGallery";
 import "./explorepage.css";
-import { Link } from "react-router-dom";
 
 export default function ExplorePage() {
   const [recipes, setRecipes] = useState([]);
@@ -28,18 +28,7 @@ export default function ExplorePage() {
 
       <SearchBarExplore searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 
-      <div className="recipe-grid">
-        {filteredRecipes.map((recipe) => (
-          <Link
-            to={`/recipe/${recipe.id}`}
-            className="recipe-card"
-            key={recipe.id}
-          >
-            <img src={recipe.image} alt={recipe.name} />
-            <h2>{recipe.name}</h2>
-          </Link>
-        ))}
-      </div>
+      <RecipeGallery recipes={filteredRecipes} />
     </main>
   );
 }
