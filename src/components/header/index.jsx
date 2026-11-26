@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
-export default function Header() {
+export default function header() {
   return (
     <>
       <header className="header">
