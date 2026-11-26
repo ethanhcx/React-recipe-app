@@ -4,7 +4,7 @@ import FavouriteButton from "../FavouriteButton";
 function RecipeCard({ recipe }) {
   return (
     <div className="recipe-card">
-      <h1 className="recipe-name">{recipe.name}</h1>
+      <h1 className="recipe-name" role="figure">{recipe.name}</h1>
       <div className="recipe-badges">
             {recipe.mealType.map((type, index) => (
                 <span key={index}>{type}</span>
