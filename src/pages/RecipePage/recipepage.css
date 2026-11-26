@@ -45,13 +45,16 @@
 }
 
 /* Shared headings */
-.ingredients-heading,
-.recipe-steps-heading {
+.ingredients-heading {
   margin: 0 0 0.75rem;
   padding-bottom: 0.5rem;
   font-size: 1.25rem;
   color: #254f3c;
   border-bottom: 2px solid #e9e5d9;
+}
+
+.recipe-steps-heading {
+  color: #c47b52;
 }
 
 /* Ingredients */
@@ -106,7 +109,7 @@
 
 .recipe-steps li::marker {
   font-weight: bold;
-  color: #254f3c;
+  color: #c47b52;
 }
 
 /* Mobile */

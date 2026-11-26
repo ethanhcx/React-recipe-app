@@ -46,7 +46,7 @@ describe("BuildTheRecipe Component", () => {
                 </FavouritesProvider>
               );
 
-        const recipe = await screen.findByRole("figure");
+        const recipe = await screen.findByRole("main-heading");
 
         expect(recipe).toHaveTextContent("Chicken Pasta");
         expect(recipe).toBeInTheDocument();

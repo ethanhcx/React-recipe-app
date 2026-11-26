@@ -88,6 +88,7 @@ body {
 
 .contact {
   background-color: #c47b52;
+  font-family: inherit;
   border: none;
   padding: 8px 12px;
   border-radius: 8px;
