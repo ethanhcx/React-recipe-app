@@ -14,11 +14,11 @@ export default function Header() {
 
           <NavLink to="/favourites">Favourites</NavLink>
           <NavLink to="/explore">Explore</NavLink>
-        </nav>
 
-        <NavLink to="/buildrecipe" className="search-button">
-          Build a recipe
-        </NavLink>
+          <NavLink to="/buildrecipe" className="search-button">
+            Build a recipe
+          </NavLink>
+        </nav>
       </header>
       <Outlet />
     </>

@@ -1,0 +1,64 @@
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+ 
+}
+
+.recipe-card {
+  border-radius: 18px;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+
+}
+
+.recipe-card:hover {
+  transform: translateY(-2.5px);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.recipe-card h2 {
+  color: #244c3b;
+  font-size: 19px;
+  padding: 18px;
+  min-height: 76px;
+}
+
+
+.recipe-badges {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.recipe-badges span {
+    background-color: #f8f5ed;
+    color: #244c3b;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.recipe-badges .difficulty-badge {
+    background-color: #244c3b;
+    color: white;
+}
+
+.servings {
+  background-color: #e9e5d9;
+  color: #244c3b;
+  padding: 9px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 6px; 
+  border-radius: 20px;
+}
