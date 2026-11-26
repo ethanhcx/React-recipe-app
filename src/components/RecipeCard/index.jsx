@@ -5,6 +5,15 @@ function RecipeCard({ recipe }) {
   return (
     <div className="recipe-card">
       <h1 className="recipe-name">{recipe.name}</h1>
+      <div className="recipe-badges">
+            {recipe.mealType.map((type, index) => (
+                <span key={index}>{type}</span>
+            ))}
+
+            <span className="difficulty-badge">
+                {recipe.difficulty}
+            </span>
+      </div>
       <img className="recipe-image" src={recipe.image} alt={recipe.name} />
       <div className="recipe-actions">
         <FavouriteButton recipe={recipe} />
@@ -34,20 +43,13 @@ function RecipeCard({ recipe }) {
           </div>
         </div>
 
-function RecipeCard({ recipe }) {
-
-    return (
-        <div className="recipe-card">
-            <h1 className="recipe-name">{recipe.name}</h1>
-            <img className="recipe-image" src={recipe.image} />
-                <div className="recipe-list">
-                    <h2 className="recipe-steps-heading">Steps</h2>
-                    <ol className="recipe-steps">
-                        {recipe.instructions.map((step, index) => (
-                            <li key={index}>{step}</li>
-                        ))}
-                    </ol>
-                </div>
+        <div className="recipe-list">
+          <h2 className="recipe-steps-heading">Steps</h2>
+          <ol className="recipe-steps">
+            {recipe.instructions.map((step, index) => (
+              <li key={index}>{step}</li>
+            ))}
+          </ol>
         </div>
       </div>
     </div>

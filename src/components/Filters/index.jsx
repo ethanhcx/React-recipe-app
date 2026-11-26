@@ -22,7 +22,7 @@ export default function Filters({recipes, difficulty, mealType, searchString1, s
 
     const matchMealType = !mealType || item.mealType.includes(mealType);
 
-    const results = match1 && match2 && ( matchDifficulty || matchMealType)
+    const results = (match1 && match2) && matchDifficulty && matchMealType;
     console.log(results)
   return results
 

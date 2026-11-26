@@ -33,16 +33,56 @@ export default function BuildTheRecipe() {
 
 
   return (
-    <div>
-        <SearchForm  setSearchString1={setSearchString1} setSearchString2={setSearchString2} />
-        <MealTypeFilter mealType={mealType} setMealType={setMealType} />
-        <DifficultyFilter difficulty={difficulty} setDifficulty={setDifficulty} />
-        
+    <main className="build-recipe-page">
+
+        <div className="build-recipe-heading">
+            <span>LESS WASTE. MORE TASTE.</span>
+            <h1>Build your recipe</h1>
+            <p>
+                Turn the ingredients you already have into something delicious.
+                Find your next meal and make the most of your kitchen.
+            </p>
+        </div>
+
+        <div className="recipe-search-panel">
+
+            <h2>What's in your kitchen?</h2>
+            <p>Enter your ingredients to discover matching recipes.</p>
+
+            <SearchForm  setSearchString1={setSearchString1} setSearchString2={setSearchString2}/>
+
+            <div className="recipe-filters">
+                <div className="filter-group">
+                    <label>Meal type</label>
+                    <MealTypeFilter mealType={mealType} setMealType={setMealType}/>
+                </div>
+
+                <div className="filter-group">
+                    <label>Difficulty</label>
+                    <DifficultyFilter  difficulty={difficulty} setDifficulty={setDifficulty}/>
+                </div>
+            </div>
+
+        </div>
+
+        <div className="recipe-results-heading">
+            <h2>Discover your recipes</h2>
+            <p>{filteredRecipes.length} recipes found</p>
+        </div>
+
         <div className="recipe-container">
             {filteredRecipes.map((item) => (
                 <RecipeCard key={item.id} recipe={item} />
             ))}
         </div>
-    </div>
-  )
+
+        {filteredRecipes.length === 0 && (
+            <div className="no-recipes">
+                <h3>No matching recipes found</h3>
+                <p>Try different ingredients or change your filters.</p>
+            </div>
+        )}
+
+    </main>
+)
 }
