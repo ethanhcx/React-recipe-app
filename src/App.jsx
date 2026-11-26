@@ -11,7 +11,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Header />}>
         <Route index element={<Pages.HomePage />} />
-        <Route path="/buildrecipe" element={<Pages.BuildRecipePage />} />
+        <Route path="/buildrecipe" element={<Pages.BuildTheRecipe />} />
         <Route path="/recipe" element={<Pages.RecommendedRecipePage />} />
         <Route path="/recipe/:id" element={<Pages.RecipePage />} />
         <Route path="/favourites" element={<Pages.FavouritesPage />} />
