@@ -1,5 +1,5 @@
 import {React, useState,useEffect} from 'react'
-import { Filters, DifficultyFilter, SearchForm, MealTypeFilter} from '../../components'
+import { Filters, DifficultyFilter, SearchForm, MealTypeFilter, RecipeCard} from '../../components'
 
 
 export default function BuildTheRecipe() {
@@ -38,16 +38,10 @@ export default function BuildTheRecipe() {
         <MealTypeFilter mealType={mealType} setMealType={setMealType} />
         <DifficultyFilter difficulty={difficulty} setDifficulty={setDifficulty} />
         
-         <div >
-        {filteredRecipes.map((item) => (
-            <div key={item.id} className="recipe-card">
-                <img src={item.image} alt={item.name} />
-                <h3>{item.name}</h3>
-                <p>{item.instructions}</p>
-                <p>{item.mealType}</p>
-                <p>{item.difficulty}</p>
-            </div>
-        ))}
+        <div className="recipe-container">
+            {filteredRecipes.map((item) => (
+                <RecipeCard key={item.id} recipe={item} />
+            ))}
         </div>
     </div>
   )
