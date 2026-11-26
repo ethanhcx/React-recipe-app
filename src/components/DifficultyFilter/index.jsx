@@ -9,7 +9,7 @@ export default function DifficultyFilter({difficulty, setDifficulty}) {
       value={difficulty}
       onChange={(e) => setDifficulty(e.target.value)}
     >
-      <option value="">Diffiulty</option>
+      <option value="">Difficulty</option>
       <option value="Easy">Easy</option>
       <option value="Medium">Medium</option>        
     </select>
