@@ -2,7 +2,7 @@
 
 A full frontend recipe application built with React. Browse recipes, search by the ingredients you have, filter by difficulty and category, and save your favourites.
 
-**Live site:** [https://react-recipe-app-xtcv.onrender.com/explore]
+**Live site:** [https://react-recipe-app-xtcv.onrender.com/]
 
 ## Tech stack
 
