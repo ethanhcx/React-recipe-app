@@ -1,0 +1,156 @@
+.recipe-card {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.recipe-name {
+    margin: 0 0 1rem;
+    font-size: 1.75rem;
+}
+
+.recipe-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.recipe-list {
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.recipe-steps-heading {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.25rem;
+}
+
+.recipe-steps {
+    padding-left: 1.5rem;
+    line-height: 1.6;
+}
+
+.recipe-steps li {
+    margin-bottom: 0.5rem;
+}
+
+
+
+.recipe-card {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.recipe-name {
+  margin: 0 0 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #254f3c;
+}
+
+.recipe-image {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 0 auto 2rem;
+  border-radius: 16px;
+}
+
+.recipe-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.ingredients-list {
+  padding: 1.25rem;
+  background: #f7f4ec;
+  border-radius: 16px;
+}
+
+.ingredients-heading,
+.recipe-steps-heading {
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: #254f3c;
+  border-bottom: 2px solid #e9e5d9;
+}
+
+.recipe-ingredients {
+  margin: 0;
+  padding-left: 1.25rem;
+  line-height: 1.6;
+}
+
+.recipe-steps {
+  margin: 0;
+  padding-left: 1.5rem;
+  line-height: 1.7;
+}
+
+.recipe-steps li {
+  margin-bottom: 0.75rem;
+}
+
+.recipe-steps li::marker {
+  font-weight: bold;
+  color: #254f3c;
+}
+
+@media (max-width: 700px) {
+  .recipe-card {
+    padding: 1.25rem;
+  }
+
+  .recipe-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.recipe-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.recipe-info {
+  padding: 1rem 1.25rem;
+  background: #e9e5d9;
+  border-radius: 16px;
+}
+
+.recipe-info p {
+  margin: 0;
+  padding: 0.4rem 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.recipe-info p + p {
+  border-top: 1px solid rgba(37, 79, 60, 0.15);
+}
+
+.recipe-info strong {
+  color: #254f3c;
+}
+
+.recipe-actions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}

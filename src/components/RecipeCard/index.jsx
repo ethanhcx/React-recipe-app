@@ -1,7 +1,38 @@
 import React from "react";
+import FavouriteButton from "../FavouriteButton";
 
+function RecipeCard({ recipe }) {
+  return (
+    <div className="recipe-card">
+      <h1 className="recipe-name">{recipe.name}</h1>
+      <img className="recipe-image" src={recipe.image} alt={recipe.name} />
+      <div className="recipe-actions">
+        <FavouriteButton recipe={recipe} />
+      </div>
 
+      <div className="recipe-content">
+        <div className="recipe-sidebar">
+          <div className="ingredients-list">
+            <h2 className="ingredients-heading">Ingredients</h2>
+            <ul className="recipe-ingredients">
+              {recipe.ingredients.map((ingredient, index) => (
+                <li key={index}>{ingredient}</li>
+              ))}
+            </ul>
+          </div>
 
+          <div className="recipe-info">
+            <p className="calories-tag">
+              Calories Per Serving: <strong>{recipe.caloriesPerServing}</strong>
+            </p>
+            <p className="time-tags">
+              Prep time: <strong>{recipe.prepTimeMinutes} min</strong>
+            </p>
+            <p className="time-tags">
+              Cook time: <strong>{recipe.cookTimeMinutes} min</strong>
+            </p>
+          </div>
+        </div>
 
 function RecipeCard({ recipe }) {
 
@@ -18,7 +49,9 @@ function RecipeCard({ recipe }) {
                     </ol>
                 </div>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
 
 export default RecipeCard;
