@@ -1,14 +1,17 @@
 .recipe-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
- 
+  gap: 10px;
+  padding: 10px;
 }
 
 .recipe-card {
-  border-radius: 18px;
-  transition: transform 0.2s ease;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
   text-decoration: none;
-
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .recipe-card:hover {
@@ -24,41 +27,45 @@
 
 .recipe-card h2 {
   color: #244c3b;
-  font-size: 19px;
-  padding: 18px;
-  min-height: 76px;
+  font-size: 16px;
+  padding: 12px 0;
+  min-height: 40px;
+  text-align: center;
 }
 
-
 .recipe-badges {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+  min-height: 22px;
 }
 
 .recipe-badges span {
-    background-color: #f8f5ed;
-    color: #244c3b;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 14px;
+  background-color: #f8f5ed;
+  color: #244c3b;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
 }
 
 .recipe-badges .difficulty-badge {
-    background-color: #244c3b;
-    color: white;
+  background-color: #244c3b;
+  color: white;
 }
 
 .servings {
   background-color: #e9e5d9;
   color: #244c3b;
-  padding: 9px 15px;
+  padding: 6px 12px;
   border-radius: 20px;
-  font-size: 14px;
+  font-size: 12px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 6px; 
-  border-radius: 20px;
+  gap: 5px;
+  width: 100%;
+  margin-top: 5px;
 }
