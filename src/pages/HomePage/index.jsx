@@ -1,30 +1,41 @@
 import React from "react";
 import "./homepage.css";
+import { Link } from "react-router-dom";
+import { Footer } from "../../components";
 
 export default function HomePage() {
   return (
-    <main className="home-page">
-      <section className="homepage">
-        <div className="homepage-content">
-          <span className="small-text"></span>
+    <>
+      <main className="home-page">
+        <section className="homepage-section">
+          <div className="homepage-content">
+            <span className="small-text">Don't know what to cook?</span>
 
-          <h1>
-            <span> </span>
-          </h1>
+            <h1>Leave it to us!</h1>
 
-          <p>Discover delicious recipes</p>
-
-          <div className="hero-buttons">
-            <button className="primary-button">Build a recipe</button>
-
-            
+            <p>
+              Build recipes by filtering on what ingredients you currently have
+              or explore all available recipes.
+            </p>
+            <div className="homepage-buttons">
+              <Link className="primary-button" to="/buildrecipe">
+                Build a recipe
+              </Link>
+              <Link className="secondary-button" to="/explore">
+                Explore recipes
+              </Link>
+            </div>
           </div>
-        </div>
 
-        <div className="hero-image">
-          <img src="https://www.slazzer.com/static/images/design_templates/recipe_photo_designer/placeholder.png" alt="image of a pizza" />
-        </div>
-      </section>
-    </main>
+          <div className="homepage-image">
+            <img
+              src="https://cdn.dummyjson.com/recipe-images/18.webp"
+              alt="Korean Bibimbap"
+            />
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </>
   );
 }

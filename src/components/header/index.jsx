@@ -13,6 +13,7 @@ export default function Header() {
           <NavLink to="/">Home</NavLink>
 
           <NavLink to="/favourites">Favourites</NavLink>
+          <NavLink to="/explore">Explore</NavLink>
         </nav>
 
         <NavLink to="/buildrecipe" className="search-button">

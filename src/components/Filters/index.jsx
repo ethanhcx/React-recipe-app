@@ -1,15 +1,36 @@
 import React from 'react'
-import SearchForm from '../SearchForm'
+// import SearchForm from '../SearchForm'
 
 
-export default function Filters({recipes, match1, match2, difficulty, mealType}) {
+export default function Filters({recipes, difficulty, mealType, searchString1, searchString2}) {
 
-  const difficultyFilter = recipes.filter((item) => {
-      const matchDifficulty = item.difficulty
-      const matchMealType = item.
-  })
+
+  const Filter = recipes.filter((item) => {
+        // let filteredRecipes = recipes.filter((item) => {
+
+    const match1 = item.ingredients.some((ingredient) =>
+        ingredient.toLowerCase().includes(searchString1.toLowerCase().trim())
+    );
+
+    const match2 = item.ingredients.some((ingredient) =>
+        ingredient.toLowerCase().includes(searchString2.toLowerCase().trim())
+    );
+ 
+    const matchDifficulty = !difficulty || item.difficulty === difficulty
+    // difficulty === '' || item.difficulty === difficulty;
+
+
+    const matchMealType = !mealType || item.mealType.includes(mealType);
+
+    const results = match1 && match2 && ( matchDifficulty || matchMealType)
+    console.log(results)
+  return results
+
+        })
+
+
 
   return (
-    <div>Filters</div>
+    Filter
   )
 }

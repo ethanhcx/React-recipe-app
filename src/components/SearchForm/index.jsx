@@ -1,35 +1,39 @@
 import React, { useEffect, useState } from 'react'
 
 
-export default function SearchForm() {
+
+export default function SearchForm({recipes,setRecipes, setSearchString1, setSearchString2}) {
     const [inputValue1, setInputValue1] = useState('');
     const [inputValue2, setInputValue2] = useState('');
-    const [searchString1, setSearchString1] = useState('Pasta')
-    const [searchString2, setSearchString2] = useState('Garlic')
-    const [recipes,setRecipes] = useState([])
+    //const [searchString1, setSearchString1] = useState('Pasta')
+    //const [searchString2, setSearchString2] = useState('Garlic')
+    // const [recipes,setRecipes] = useState([])
 
-    useEffect (()=> {
-        async function searchRecipe() {
+    // useEffect (()=> {
+    //     async function searchRecipe() {
 
-            const response = await fetch (`https://dummyjson.com/recipes`)
-            const Data = await response.json();
-            setRecipe(Data.recipes);            
-        }
-        searchRecipe();
-    },[])
+    //         const response = await fetch (`https://dummyjson.com/recipes`)
+    //         const Data = await response.json();
+    //         console.log(Data)
+    //         setRecipes(Data.recipes);       
+                 
+    //     }
+    //     searchRecipe();
+    //     console.log(searchRecipe)
+    // },[])
 
-    let filteredRecipes = recipes.filter((item) => {
+//     let filteredRecipes = recipes.filter((item) => {
 
-    const match1 = item.ingredients.some((ingredient) =>
-        ingredient.toLowerCase().includes(searchString1.toLowerCase().trim())
-    );
+//     const match1 = item.ingredients.some((ingredient) =>
+//         ingredient.toLowerCase().includes(searchString1.toLowerCase().trim())
+//     );
 
-    const match2 = item.ingredients.some((ingredient) =>
-        ingredient.toLowerCase().includes(searchString2.toLowerCase().trim())
-    );
+//     const match2 = item.ingredients.some((ingredient) =>
+//         ingredient.toLowerCase().includes(searchString2.toLowerCase().trim())
+//     );
 
-    return match1 && match2;
-}); 
+//     return match1 && match2;
+// }); 
 
     function handleInput1(e) {
             const newInput1 = e.target.value;
@@ -67,14 +71,17 @@ export default function SearchForm() {
             />
             <input type="submit" value='Search' />
         </form>
-        <div >
+        
+        
+        {/* <div >
         {filteredRecipes.map((item) => (
             <div key={item.id} className="recipe-card">
                 <img src={item.image} alt={item.name} />
                 <h3>{item.name}</h3>
+                <p>{item.instructions}</p>
             </div>
         ))}
-        </div>
+        </div> */}
     </div>
   )
 }
