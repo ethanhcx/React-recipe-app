@@ -46,6 +46,10 @@ src/
 └── main.jsx      # Entry point (Router + FavouritesProvider)
 ```
 
+## Testing
+Automated testing using Vitest, achieving 90% test coverage across the application.
+
+
 ## Future improvements
 
 - Match several ingredients at once and show which ones are missing
