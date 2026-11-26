@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1795703420604" clover="3.2.0">
+  <project timestamp="1795703420604" name="All files">
+    <metrics statements="76" coveredstatements="69" conditionals="18" coveredconditionals="18" methods="40" coveredmethods="34" elements="134" coveredelements="121" complexity="0" loc="76" ncloc="76" packages="15" files="18" classes="18"/>
+    <package name="components">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.jsx" path="C:\Users\Min Hein\Desktop\Deep_Dive\group-app\src\components\index.jsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.DifficultyFilter">
+      <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <file name="index.jsx" path="C:\Users\Min Hein\Desktop\Deep_Dive\group-app\src\components\DifficultyFilter\index.jsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.FavouriteButton">
+      <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <file name="favouritebutton.css" path="C:\Users\Min Hein\Desktop\Deep_Dive\group-app\src\components\FavouriteButton\favouritebutton.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="index.jsx" path="C:\Users\Min Hein\Desktop\Deep_Dive\group-app\src\components\FavouriteButton\index.jsx">
+        <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="5" count="9" type="stmt"/>
+        <line num="6" count="9" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Filters">
+      <metrics statements="11" coveredstatements="11" conditionals="8" coveredconditionals="8" methods="4" coveredmethods="4"/>
+      <file name="index.jsx" path="C:\Users\Min Hein\Desktop\Deep_Dive\group-app\src\components\Filters\index.jsx">
+        <metrics statements="11" coveredstatements="11" conditionals="8" coveredconditionals="8" methods="4" coveredmethods="4"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="10" count="13" type="stmt"/>
+        <line num="11" count="18" type="stmt"/>
+        <line num="14" count="13" type="stmt"/>
+        <line num="15" count="15" type="stmt"/>
+        <line num="18" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="13" type="cond" truecount="4" falsecount="0"/>
+        <line num="25" count="13" type="stmt"/>
+        <line num="26" count="13" type="stmt"/>
+        <line num="30" count="8" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Footer">
+      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.jsx" path="C:\Users\Min Hein\Desktop\Deep_Dive\group-app\src\components\Footer\index.jsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Header">
+      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.jsx" path="C:\Users\Min Hein\Desktop\Deep_Dive\group-app\src\components\Header\index.jsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.MealTypeFilter">
+      <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <file name="index.jsx" path="C:\Users\Min Hein\Desktop\Deep_Dive\group-app\src\components\MealTypeFilter\index.jsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.RecipeCard">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="index.jsx" path="C:\Users\Min Hein\Desktop\Deep_Dive\group-app\src\components\RecipeCard\index.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="19" count="38" type="stmt"/>
+        <line num="41" count="34" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.RecipeGallery">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="index.jsx" path="C:\Users\Min Hein\Desktop\Deep_Dive\group-app\src\components\RecipeGallery\index.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+      <file name="recipeGallery.css" path="C:\Users\Min Hein\Desktop\Deep_Dive\group-app\src\components\RecipeGallery\recipeGallery.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.SearchBarExplore">
+      <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <file name="index.jsx" path="C:\Users\Min Hein\Desktop\Deep_Dive\group-app\src\components\SearchBarExplore\index.jsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+      </file>
+      <file name="searchBarExplore.css" path="C:\Users\Min Hein\Desktop\Deep_Dive\group-app\src\components\SearchBarExplore\searchBarExplore.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.SearchForm">
+      <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <file name="index.jsx" path="C:\Users\Min Hein\Desktop\Deep_Dive\group-app\src\components\SearchForm\index.jsx">
+        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="6" count="17" type="stmt"/>
+        <line num="7" count="17" type="stmt"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="11" count="7" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="28" count="17" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.SearchWidget">
+      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.jsx" path="C:\Users\Min Hein\Desktop\Deep_Dive\group-app\src\components\SearchWidget\index.jsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.header">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.jsx" path="C:\Users\Min Hein\Desktop\Deep_Dive\group-app\src\components\header\index.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="context">
+      <metrics statements="14" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="10" coveredmethods="10"/>
+      <file name="FavouritesContext.jsx" path="C:\Users\Min Hein\Desktop\Deep_Dive\group-app\src\context\FavouritesContext.jsx">
+        <metrics statements="14" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="10" coveredmethods="10"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="7" count="9" type="stmt"/>
+        <line num="8" count="7" type="stmt"/>
+        <line num="9" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="16" count="9" type="stmt"/>
+        <line num="17" count="9" type="stmt"/>
+        <line num="21" count="9" type="stmt"/>
+        <line num="24" count="9" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="32" count="9" type="stmt"/>
+        <line num="41" count="9" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages.BuildTheRecipe">
+      <metrics statements="19" coveredstatements="19" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+      <file name="index.jsx" path="C:\Users\Min Hein\Desktop\Deep_Dive\group-app\src\pages\BuildTheRecipe\index.jsx">
+        <metrics statements="19" coveredstatements="19" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
