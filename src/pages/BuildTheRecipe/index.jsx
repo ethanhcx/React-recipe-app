@@ -66,7 +66,7 @@ export default function BuildTheRecipe() {
         </div>
 
         <div className="recipe-results-heading">
-            <h2>Discover your recipes</h2>
+            <h2>Recommanded recipes</h2>
             <p>{filteredRecipes.length} recipes found</p>
         </div>
 
