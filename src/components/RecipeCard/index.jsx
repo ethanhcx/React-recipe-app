@@ -3,8 +3,8 @@ import FavouriteButton from "../FavouriteButton";
 
 function RecipeCard({ recipe }) {
   return (
-    <div className="recipe-card">
-      <h1 className="recipe-name">{recipe.name}</h1>
+    <div className="recipe-detail">
+      <h1 role="main-heading" className="recipe-name">{recipe.name}</h1>
       <img className="recipe-image" src={recipe.image} alt={recipe.name} />
       <div className="recipe-actions">
         <FavouriteButton recipe={recipe} />
@@ -14,7 +14,7 @@ function RecipeCard({ recipe }) {
         <div className="recipe-sidebar">
           <div className="ingredients-list">
             <h2 className="ingredients-heading">Ingredients</h2>
-            <ul className="recipe-ingredients">
+            <ul className="recipe-ingredients" role="ingredients-list">
               {recipe.ingredients.map((ingredient, index) => (
                 <li key={index}>{ingredient}</li>
               ))}
@@ -36,7 +36,7 @@ function RecipeCard({ recipe }) {
 
         <div className="recipe-list">
           <h2 className="recipe-steps-heading">Steps</h2>
-          <ol className="recipe-steps">
+          <ol className="recipe-steps" role="steps-list">
             {recipe.instructions.map((step, index) => (
               <li key={index}>{step}</li>
             ))}

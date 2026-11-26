@@ -1,0 +1,94 @@
+.favourites-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 1.5rem;
+}
+
+.favourites-title {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 45px;
+  color: #244c3b;
+}
+
+/* Empty state */
+.favourites-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #e9e5d9;
+  border-radius: 24px;
+}
+
+.favourites-empty p {
+  font-size: 1.2rem;
+  color: #244c3b;
+}
+
+.favourites-browse {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  color: #fff;
+  text-decoration: none;
+  background: #244c3b;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+
+.favourites-browse:hover {
+  background: #37664e;
+}
+
+/* Grid of saved recipes */
+.favourites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.favourite-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.favourite-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.favourite-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.favourite-item img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.favourite-item h2 {
+  margin-top: 0.75rem;
+  font-size: 1.15rem;
+  color: #244c3b;
+}
+
+/* Keeps the Save button at the bottom so cards line up */
+.favourite-item .favourite-button {
+  align-self: center;
+  margin-top: auto;
+}
