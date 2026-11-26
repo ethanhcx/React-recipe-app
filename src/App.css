@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #f8f5ed; 
+  background-color: #f8f5ed;
 }
 
 /* HEADER */
@@ -30,6 +30,7 @@ body {
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 35px;
   margin-left: auto;
   margin-right: 40px;
@@ -62,6 +63,13 @@ body {
   background-color: #37664e;
 }
 
+/* Keeps the button text white, even if it sits inside .nav-links */
+.nav-links a.search-button,
+.nav-links a.search-button:hover,
+.nav-links a.search-button.active {
+  color: white;
+}
+
 
 /* Footer*/
 .footer {
@@ -70,7 +78,7 @@ body {
   line-height: 1.6;
   padding-top: 1.5%;
   padding-bottom: 5px;
-  color: #e9e5d9
+  color: #e9e5d9;
 }
 
 .footer a{
@@ -376,5 +384,3 @@ body {
     background-color: #244c3b;
     color: white;
 }
-
-
