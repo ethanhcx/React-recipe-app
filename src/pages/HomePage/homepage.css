@@ -1,12 +1,9 @@
-/* HomePage */
-
 .home-page {
-  min-height: 100vh;
-  background-color: #f8f5ed;
-  padding: 60px 7%;
+  padding: 50px 4%;
+  margin-bottom: 10px;
 }
 
-.homepage {
+.homepage-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -20,73 +17,75 @@
   max-width: 550px;
 }
 
-.small- {
+.small-text {
   color: #b66d48;
-  font-size: 12px;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: 2px;
 }
 
-.hero h1 {
-  font-size: clamp(38px, 5vw, 65px);
+.homepage-content h1 {
+  font-size: 65px;
   line-height: 1.1;
   color: #244c3b;
-  margin: 20px 0;
+  margin: 25px 0;
   letter-spacing: -2px;
-}
+  font-size: 80px;
+  }
 
-.hero h1 span {
+.homepage-content h1 span {
   color: #b66d48;
 }
 
-.hero p {
-  color: #626b5e;
-  font-size: 17px;
-  line-height: 1.7;
-  margin-bottom: 30px;
+.homepage-content p {
+  font-size: 21px;
+  line-height: 1.6;
+  margin-bottom: 60px;
 }
 
-.hero-buttons {
+.homepage-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
 }
 
-.primary-button,
-.secondary-button {
+.primary-button {
   padding: 15px 25px;
   border-radius: 30px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
-  transition: 0.2s;
-}
-
-.primary-button {
+  font-size: 24px;
+  font-weight: 550;
+  transition: ease-in-out 0.2s;
   background: #244c3b;
   color: white;
   border: none;
-}
-
-.primary-button:hover {
-  background: #37664e;
-  transform: translateY(-2px);
+  text-decoration: none;
 }
 
 .secondary-button {
-  background: transparent;
-  color: #244c3b;
-  border: 1px solid #244c3b;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 24px;
+  font-weight: 550;
+  transition: ease-in-out 0.2s;
+  background: #c4ab0c;
+  color: white;
+  border: none;
+  text-decoration: none;
+}
+
+
+.primary-button:hover {
+  background: #37664e;
+  transform: translateY(-1.1px);
 }
 
 .secondary-button:hover {
-  background: #244c3b;
-  color: white;
+  background: #d1bf44;
+  transform: translateY(-1.1px);
 }
-
-.hero-image img {
+.homepage-image img {
   width: 100%;
-  height: 430px;
+  height: 500px;
   object-fit: cover;
-  border-radius: 22px;
+  border-radius: 18px;
 }
