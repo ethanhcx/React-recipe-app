@@ -44,7 +44,8 @@ function RecipeCard({ recipe }) {
         </div>
 
         <div className="recipe-list">
-          <h2 className="recipe-steps-heading">Steps</h2>
+          <h2 className="recipe-steps-heading">Steps </h2>
+          <br/>
           <ol className="recipe-steps" role="steps-list">
             {recipe.instructions.map((step, index) => (
               <li key={index}>{step}</li>
